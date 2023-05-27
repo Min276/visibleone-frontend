@@ -3,6 +3,7 @@ import ListItems from "./items";
 import { SliderData } from "../../data/mock";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { ImMobile } from "react-icons/im";
+import AnimationFrame from "../AnimationFrame";
 
 const SliderSection = () => {
   const [activeTab, setActiveTab] = useState(0);
@@ -20,10 +21,10 @@ const SliderSection = () => {
           style={{ display: activeTab === index ? "flex" : "none" }}
           className="flex items-center"
         >
-          <div className="w-1/2 flex justify-center">
+          <AnimationFrame className="w-1/2 flex justify-center">
             <img src={item.image} alt="vectors" />
-          </div>
-          <div className="flex flex-col py-16 mb-2 gap-8 w-1/2 text-white pr-16">
+          </AnimationFrame>
+          <AnimationFrame className="flex flex-col py-16 mb-2 gap-8 w-1/2 text-white pr-16">
             <h2 className="text-2xl font-bold">{item.title}</h2>
             <ListItems data={item.lists} />
             <div className="flex gap-8">
@@ -64,7 +65,7 @@ const SliderSection = () => {
                 </h4>
               </div>
             )}
-          </div>
+          </AnimationFrame>
         </div>
       ))}
     </div>

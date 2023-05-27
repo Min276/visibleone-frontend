@@ -1,3 +1,4 @@
+import AnimationFrame from "../AnimationFrame";
 import styles from "./hero.module.css";
 
 const HeroSection = () => {
@@ -11,7 +12,7 @@ const HeroSection = () => {
         eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
         voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
       </p>
-      <div className="flex items-center justify-center gap-8 mb-24">
+      <AnimationFrame className="flex items-center justify-center gap-8 mb-24">
         <div className="flex items-center z-10 gap-4 border-r-4 pr-8">
           <h4 className="text-2xl font-semibold">Built for:</h4>
           <img
@@ -45,7 +46,7 @@ const HeroSection = () => {
             height={75}
           />
         </div>
-      </div>
+      </AnimationFrame>
       <img
         src="/images/mockup.svg"
         className="absolute -bottom-60"

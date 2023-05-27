@@ -13,11 +13,12 @@ import {
   FaInstagram,
   FaTwitter,
 } from "react-icons/fa";
+import AnimationFrame from "../AnimationFrame";
 
 const Footer = () => {
   return (
     <div className={styles.footer_section}>
-      <div className="flex justify-between pb-8">
+      <AnimationFrame className="flex justify-between pb-8">
         {QuickLinks.map((item: any) => (
           <div key={item.title} className="z-10 text-white">
             <h3 className="text-lg uppercase font-[500] mb-4">{item.title}</h3>
@@ -63,9 +64,9 @@ const Footer = () => {
             </a>
           </div>
         </div>
-      </div>
+      </AnimationFrame>
       <hr className="z-10" />
-      <div className="my-2 z-10 flex items-center justify-between">
+      <AnimationFrame className="my-2 z-10 flex items-center justify-between">
         <div className="flex items-center gap-1">
           <img
             src="/images/Shopify.svg"
@@ -113,9 +114,9 @@ const Footer = () => {
             />
           </form>
         </div>
-      </div>
+      </AnimationFrame>
       <hr className="z-10" />
-      <div className="flex items-center gap-6 z-10 justify-center mt-6">
+      <AnimationFrame className="flex items-center gap-6 z-10 justify-center mt-6">
         <a href="#">
           <FaFacebookF fontSize="28px" />
         </a>
@@ -128,13 +129,13 @@ const Footer = () => {
         <a href="#">
           <FaLinkedinIn fontSize="30px" />
         </a>
-      </div>
-      <div className="flex gap-6 z-10 mt-6 justify-center">
+      </AnimationFrame>
+      <AnimationFrame className="flex gap-6 z-10 mt-6 justify-center">
         <a href="#">Shopping T&C</a>
         <a href="#">Terms & Conditions</a>
         <a href="#">Privacy Policy</a>
         <p>&copy; 2018 - Visible One</p>
-      </div>
+      </AnimationFrame>
     </div>
   );
 };

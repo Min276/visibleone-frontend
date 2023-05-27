@@ -1,9 +1,10 @@
 import ActionButton from "../ActionButton";
+import AnimationFrame from "../AnimationFrame";
 
 const AboutSection = () => {
   return (
-    <div className="mx-36 flex items-center justify-center gap-36  mt-80">
-      <div className="flex w-1/2 flex-col gap-6">
+    <AnimationFrame className="mx-36 flex items-center justify-center gap-36  mt-80">
+      <AnimationFrame className="flex w-1/2 flex-col gap-6">
         <h2 className="text-2xl uppercase font-bold tracking-wide">
           About <span className="text-[#2DC4EA] tracking-wide">Trippro</span>
         </h2>
@@ -19,7 +20,7 @@ const AboutSection = () => {
           et justo duo dolores et ea rebum. Stet clita
         </p>
         <ActionButton text="Tour to website" />
-      </div>
+      </AnimationFrame>
       <div className="flex">
         <img
           src="/images/tablet.png"
@@ -28,7 +29,7 @@ const AboutSection = () => {
           height={250}
         />
       </div>
-    </div>
+    </AnimationFrame>
   );
 };
 
